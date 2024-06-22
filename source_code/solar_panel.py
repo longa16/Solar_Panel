@@ -46,7 +46,7 @@ class SolarPanel:
         """Store energy in the solar panel's battery.
                 :argument: energy (float): The amount of energy to store.
         """
-        assert energy > 0
+        assert energy > 0.0
         if self.solar_panel_level_of_the_battery == 100:
             print("This solar panel don't need more energy ")
         else:
