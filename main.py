@@ -41,17 +41,14 @@ def menu():
         elif choice == 5:
             solar_panel.check_maintenance_needed()
         elif choice == 6:
-            efficiency = float(input("Please enter the efficiency of the solar panel: "))
-            solar_panel.tips(efficiency)
-        elif choice == 7:
             performance = int(input("Enter The warranty period during which the manufacturer"
                                     " guarantees a certain level of solar panel performance (year): "))
             annual_degradation = float(input("Enter The percentage of expected degradation of solar "
                                              "panel performance each year (0.5 ; 1.0) : "))
             solar_panel.useful_life_calculation(performance, annual_degradation)
-        elif choice == 8:
+        elif choice == 7:
             solar_panel.display_solar_panel_informations()
-        elif choice == 9:
+        elif choice == 8:
             print("Good Bye ;)")
             break
         else:
