@@ -84,23 +84,6 @@ class SolarPanel:
             print("GOOD")
 
     @staticmethod
-    def tips(efficiency: float):
-        """tips for improving solar panel efficiency """
-        assert 0 < efficiency < 100
-        if efficiency < 15:
-            print("To improve the efficiency of your solar panel \n"
-                  " and optimize its energy production, here are a few tips: \n"
-                  "Optimize Orientation and Tilt \n"
-                  "Avoid shadows \n"
-                  "Use a Solar Tracking System \n"
-                  "Add Anti-Reflection Devices \n"
-                  "If none of these tips work, contact the manufacturer directly. ")
-        if efficiency > 15:
-            print("Well, to maintain your solar panel's performance for as long as \n"
-                  "possible, monitor it regularly for malfunctions, breakdowns or loss \n"
-                  "of performance. Repair or replace defective components promptly.")
-
-    @staticmethod
     def useful_life_calculation(performance_guarantee: int, annual_degradation_rate: float):
         """Solar panel useful life calculation"""
         useful_life = performance_guarantee / annual_degradation_rate
