@@ -12,10 +12,9 @@ def menu():
           "3. Store energy of a solar panel \n"
           "4. Calculate efficiency of a solar panel \n"
           "5. Check maintenance of a solar panel \n"
-          "6. Tips for improve efficiency of a solar panel \n"
-          "7. Calculate useful life of a solar panel  \n"
-          "8. Display solar panel informations \n"
-          "9. Exit program")
+          "6. Calculate useful life of a solar panel  \n"
+          "7. Display solar panel informations \n"
+          "8. Exit program")
     time.sleep(1)
 
     solar_panel = None

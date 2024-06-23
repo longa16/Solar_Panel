@@ -1,6 +1,6 @@
 # Solar Panel
 
-Solar pane is a simple python project whose goal is to  
+Solar panel is a simple python project whose goal is to  
 launch an innovation on solar panel by adding a battery 
 extension. Our goal was to implement this solution in Python,
 subject to 02 constraints:
