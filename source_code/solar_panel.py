@@ -13,7 +13,7 @@ class SolarPanel:
            solar_panel_level_of_the_battery (int): The battery level of the solar panel (0-100%).
        """
 
-    def __init__(self, name, power_output, surface_area, solar_panel_level_of_the_battery, capacity):
+    def __init__(self, name, power_output, surface_area, solar_panel_level_of_the_battery):
         """Initialize a new instance of SolarPanel.
         """
         assert name.isalnum(), "name must be alphanumeric"
@@ -22,16 +22,15 @@ class SolarPanel:
         self.power_output = power_output
         self.surface_area = surface_area
         self.solar_panel_level_of_the_battery = solar_panel_level_of_the_battery
-        self.capacity = capacity
         self.solar_panel_level_of_the_battery = 100
 
     def display_solar_panel_informations(self):
         """Display solar panel information.
         """
         solar_panel = SolarPanel(self.name, self.power_output, self.surface_area,
-                                 self.solar_panel_level_of_the_battery, self.capacity)
+                                 self.solar_panel_level_of_the_battery)
         print("name: ", self.name, "power output: ", self.power_output, "surface area: ", self.surface_area,
-              "level battery: ", self.solar_panel_level_of_the_battery, self.capacity)
+              "level battery: ", self.solar_panel_level_of_the_battery)
 
     def use_energy(self, energy_consumed: float):
         """Use energy from the solar panel's battery.
