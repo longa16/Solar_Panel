@@ -18,7 +18,6 @@ class SolarPanel:
         """
         assert name.isalnum(), "name must be alphanumeric"
         assert power_output > 0
-        assert surface_area > 0
         self.name = name
         self.power_output = power_output
         self.surface_area = surface_area
